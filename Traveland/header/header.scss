@@ -1,0 +1,46 @@
+@import url(./nav/nav.css);
+@mixin text ($f-size,$f-family,$f-weight){
+	font-size: $f-size;
+	font-family: $f-family;
+	font-weight: $f-weight;
+}
+header{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../../media/03fe2374e6453f1e1f7be3a98ebf53fb.jpg);
+	background-position: center;
+	background-size: cover;
+	section{
+		width: 100%;
+		height: calc(100vh - 80px);
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 45px;
+		h2{
+			max-width: 720px;
+			@include text(65px,"gelasio",700);
+			color: #fff;
+			letter-spacing: 1px;
+			line-height: 78px;
+		}
+		p{
+			max-width: 458px;
+			@include text(18px,"roboto",400);
+			color: #fff;
+			line-height: 29px;
+			opacity: 0.6;
+		}
+	}
+}
+@media (max-width:1400px) {
+	header{
+		background-position: right;
+	}
+}
+@media (max-width:600px) {
+	section{
+		font-size: 50px;
+		line-height: 60px;
+	}
+}

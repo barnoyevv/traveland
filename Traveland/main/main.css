@@ -1,0 +1,119 @@
+@import url(./location/location.css);
+@import url(./news/news.css);
+@import url(./offers/offers.css);
+.main-News {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.main-newsHeader {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-newsHeader h2 {
+  font-size: 43px;
+  font-family: "gelasio";
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+.main-newsHeader p {
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.main-newsBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 30px;
+}
+.main-newsBox .main-newsLeft {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-newsBox .main-newsLeft img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+}
+.main-newsBox .main-newsLeft .main-newsLeftText {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-newsBox .main-newsLeft .main-newsLeftText h3 {
+  font-size: 20px;
+  font-family: "gelasio";
+  font-weight: 500;
+  line-height: 32px;
+}
+.main-newsBox .main-newsLeft .main-newsLeftText p {
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.main-newsRight {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-newsRight .main-newsRight-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main-newsRight .main-newsRight-item img {
+  width: 100%;
+  max-height: 201px;
+  border-radius: 10px;
+  display: flex;
+  gap: 30px;
+}
+.main-newsRight .right-text {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-newsRight .right-text h3 {
+  font-size: 20px;
+  font-family: "gelasio";
+  font-weight: 500;
+  line-height: 28px;
+}
+.main-newsRight .right-text p {
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=main.css.map */

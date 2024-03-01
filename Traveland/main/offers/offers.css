@@ -1,0 +1,85 @@
+.main-offers {
+  width: 100%;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.main-offers .main-offersHeader {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-offers .main-offersHeader h2 {
+  font-size: 43px;
+  font-family: "gelasio";
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+.main-offers .main-offersHeader p {
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.offers-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.offers-boxes .offers-box {
+  max-width: 262px;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.offers-boxes .offers-box img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+.offers-boxes .offers-box .offers-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 10px;
+}
+.offers-boxes .offers-box .offers-text h3 {
+  font-size: 24px;
+  font-family: "gelasio";
+  font-weight: 500;
+  line-height: 28px;
+}
+.offers-boxes .offers-box .offers-text p {
+  font-size: 20px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+.offers-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.offers-icons .offers-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.offers-icons .offers-icon .location {
+  font-size: 20px;
+  color: #FC1200;
+}
+.offers-icons .offers-icon .star {
+  font-size: 20px;
+  color: #FFC700;
+}/*# sourceMappingURL=offers.css.map */
