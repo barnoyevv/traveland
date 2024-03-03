@@ -1,0 +1,51 @@
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 130px;
+	.navbar-header{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		h1{
+			@include text(36px, "raleway",54px);
+			color: #fff;
+		}
+		p{
+			@include text(12px, "raleway",14px);
+			color: #fff;
+			letter-spacing: 4px;
+		}
+	}
+	ul{
+		display: flex;
+		gap: 40px;
+		a{
+			@include text(14px, "raleway",16px);
+			color: #fff;
+		}
+	}
+	span{
+		display: none;
+	}
+}
+@media (max-width: 1000px) {
+	nav{
+		ul{
+			display: none;
+		}
+		span{
+			display: block;
+			font-size: 36px;
+			color: #fff;
+		}
+		.navbar-header{
+			gap: 5px;
+		}
+	}
+}

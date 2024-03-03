@@ -1,0 +1,65 @@
+@import url(./main2/main2.css);
+@import url(./main3/main3.css);
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main1{
+	width: 100%;
+	background-color: #242B33;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+	padding-top: 190px;
+	flex-wrap: wrap;
+	.main1-box{
+		max-width: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+		img{
+			max-width: 80px;
+			max-height: 80px;
+		}
+		p{
+			@include text(20px,"roboto",27px);
+			color: #fff;
+			text-align: center;
+		}
+	}
+}
+.main1-flats{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 120px;
+	background-color: #242B33;
+	gap: 100px;
+	h2{
+		@include text(36px,"playfair",48px);
+		color: #D4C17F;
+	}
+	.box-flat-desc{
+		width: 525px;
+		height: 320px;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		padding: 50px;
+		align-items: end;
+		p{
+			@include text(24px,"raleway",28px);
+			color: #fff;
+		}
+	}
+	
+}
+.box-flats{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}

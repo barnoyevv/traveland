@@ -1,0 +1,57 @@
+@import url(../header/header.css);
+@import url(../main/main.css);
+@import url(../footer/footer.css);
+@font-face {
+  font-family: "raleway";
+  src: url(../../font/Raleway/static/Raleway-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "playfair";
+  src: url(../../font/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../../font/Roboto/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main2-button {
+  border: none;
+  background-color: #D4C17F;
+  cursor: pointer;
+  color: #fff;
+}
+
+.container {
+  padding-left: 405px;
+  padding-right: 405px;
+}
+
+@media (max-width: 1900px) {
+  .container {
+    padding-left: 205px;
+    padding-right: 205px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.main2-button {
+  width: 255px;
+  height: 50px;
+}/*# sourceMappingURL=global.css.map */

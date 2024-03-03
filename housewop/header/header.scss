@@ -1,0 +1,76 @@
+@import url(../header/nav/nav.css);
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.first{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../../media/header.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.second{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+	display: flex;
+	flex-direction: column;
+}
+.header-main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+	.main-box{
+		max-width: 585px;
+		display: flex;
+		flex-direction: column;
+		gap: 200px;
+		.main-boxHeader{
+			display: flex;
+			flex-direction: column;
+			gap: 100px;
+			h2{
+				@include text(48px,"playfair",64px);
+				color: #D4C17F;
+				text-align: center;
+			}
+			span{
+				text-align: center;
+				font-size: 40px;
+				color: #D4C17F;
+			}
+		}
+	}
+	.main-info{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.main-info-footer{
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			span{
+				font-size: 21px;
+				color: #fff;
+			}
+			p{
+				@include text(18px,"raleway", 21px);
+				color: #fff;
+			}
+		}
+	}
+}
+@media (max-width: 750px) {
+	.main-info{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}

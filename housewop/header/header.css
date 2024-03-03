@@ -1,0 +1,78 @@
+@import url(../header/nav/nav.css);
+.first {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../media/header.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+.header-main .main-box {
+  max-width: 585px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.header-main .main-box .main-boxHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.header-main .main-box .main-boxHeader h2 {
+  font-size: 48px;
+  font-family: "playfair";
+  line-height: 64px;
+  color: #D4C17F;
+  text-align: center;
+}
+.header-main .main-box .main-boxHeader span {
+  text-align: center;
+  font-size: 40px;
+  color: #D4C17F;
+}
+.header-main .main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-main .main-info .main-info-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-main .main-info .main-info-footer span {
+  font-size: 21px;
+  color: #fff;
+}
+.header-main .main-info .main-info-footer p {
+  font-size: 18px;
+  font-family: "raleway";
+  line-height: 21px;
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=header.css.map */

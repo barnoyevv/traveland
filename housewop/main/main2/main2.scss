@@ -1,0 +1,67 @@
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main2{
+	background-image: url(../../../media/1.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 190px;
+	padding-top: 180px;
+	video{
+		max-width: 720px;
+		max-height: 650px;
+	}
+	.main2-box{
+		display: flex;
+		gap: 35px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.main2-header{
+		max-width: 510px;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		h2{
+			@include text(36px,"playfair", 48px);
+			color: #D4C17F;
+		}
+		p{
+			@include text(16px,"playfair", 24px);
+			color: #fff;
+		}
+	}
+	.main2-form{
+		max-width: 540px;
+		form{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			input{
+				width: 255px;
+				height: 50px;
+				background-color: #fff;
+				opacity: 20%;
+				border: none;
+				outline: none;
+				text-align: center;
+				@include text(14px, "raleway", 27px)
+			}
+			.form-text{
+				width: 255px;
+				height: 50px;
+				text-align: center;
+				p{
+					@include text(13px,"raleway",16px);
+					color: #E7E7E7;
+				}
+			}
+		}
+	}
+}

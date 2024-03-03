@@ -1,0 +1,67 @@
+@import url(./main2/main2.css);
+@import url(./main3/main3.css);
+.main1 {
+  width: 100%;
+  background-color: #242B33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 190px;
+  flex-wrap: wrap;
+}
+.main1 .main1-box {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.main1 .main1-box img {
+  max-width: 80px;
+  max-height: 80px;
+}
+.main1 .main1-box p {
+  font-size: 20px;
+  font-family: "roboto";
+  line-height: 27px;
+  color: #fff;
+  text-align: center;
+}
+
+.main1-flats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  background-color: #242B33;
+  gap: 100px;
+}
+.main1-flats h2 {
+  font-size: 36px;
+  font-family: "playfair";
+  line-height: 48px;
+  color: #D4C17F;
+}
+.main1-flats .box-flat-desc {
+  width: 525px;
+  height: 320px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 50px;
+  align-items: end;
+}
+.main1-flats .box-flat-desc p {
+  font-size: 24px;
+  font-family: "raleway";
+  line-height: 28px;
+  color: #fff;
+}
+
+.box-flats {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */

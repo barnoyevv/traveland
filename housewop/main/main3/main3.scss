@@ -1,0 +1,61 @@
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main3{
+	width: 100%;
+	padding-top: 180px;
+	padding-bottom: 180px;
+	display: flex;
+	flex-direction: column;
+	gap: 180px;
+	background-color: #242B33;
+	.main3-header{
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+		h2{
+			@include text(36px,"playfair",48px);
+			color: #D4C17F;
+		}
+		.main3-map{
+			max-width: 1110px;
+			height: 360px;
+			background-color: #626262;
+		}
+	}
+}
+.main3-footer{
+	display: flex;
+	flex-direction: column;
+	gap: 61px;
+	h2{
+		@include text(36px,"playfair",48px);
+		color: #D4C17F;
+	}
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		input{
+			width: 245px;
+			height: 50px;
+			background-color: #fff;
+			opacity: 20%;
+			border: none;
+			outline: none;
+			text-align: center;
+			@include text(14px, "raleway", 27px)
+		}
+		.form-text{
+			width: 245px;
+			height: 50px;
+			text-align: center;
+			p{
+				@include text(13px,"raleway",16px);
+				color: #E7E7E7;
+			}
+		}
+	}
+}
